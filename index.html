@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trilha de treinamento CCO Logística</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#topo" class="brand">
+        <img src="logo.jpg" alt="Logo VIA GROUP" class="brand-logo" />
+        <strong>Trilha CCO Logística</strong>
+      </a>
+    </div>
+  </header>
+
+  <div id="topo"></div>
+
+  <!-- LAYOUT COM SIDEBAR À ESQUERDA -->
+  <div class="page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav class="side-nav" aria-label="Navegação de tópicos">
+        <div class="side-group">
+          <div class="side-group-title">Primeiros Passos</div>
+          <a class="side-link" href="#primeiros-passos">Introdução</a>
+          <a class="side-link" href="#pp-viagroup">Por que Via Group?</a>
+          <a class="side-link" href="#pp-cco">Importância do CCO</a>
+          <a class="side-link" href="#pp-metodos">Feedback Burger, 80/20 e 5 porquês</a>
+        </div>
+
+        <div class="side-group">
+          <div class="side-group-title">Visão geral</div>
+          <a class="side-link" href="#vg-tipos-km">Quais são os tipos de KM?</a>
+          <a class="side-link" href="#vg-tipos-rota">Quais são os tipos de rota?</a>
+          <a class="side-link" href="#vg-rota">Como funciona uma rota</a>
+          <a class="side-link" href="#vg-roteirizacao">O que é e para que serve uma roteirização?</a>
+          <a class="side-link" href="#vg-escala">Qual a finalidade da escala?</a>
+          <a class="side-link" href="#vg-pontualidade">Pontualidade e segurança nas rotas</a>
+          <a class="side-link" href="#vg-bpcom">Boas práticas de comunicação</a>
+          <a class="side-link" href="#vg-saidas">Saídas de rotas</a>
+          <a class="side-link" href="#vg-nao-coletas">Não coletas</a>
+          <a class="side-link" href="#norm-justificativas">Normalização das justificativas</a>
+          <a class="side-link" href="#vg-madrugada">Turno da madrugada</a>
+          <a class="side-link" href="#vg-diurno">Turno diurno</a>
+          <a class="side-link" href="#route-now-videos">Route Now — Vídeos</a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main class="content">
+      <section class="hero">
+        <h1>Bem-vindo à trilha de treinamento do CCO Logística</h1>
+        <br />
+      </section>
+
+      <!-- PRIMEIROS PASSOS -->
+      <section id="primeiros-passos" class="section">
+        <h2 class="section-title">Primeiros Passos</h2>
+        <br />
+
+        <article class="topic" id="pp-viagroup">
+          <h3 class="topic-title">Por que a Via Lácteos se transformou em Via Group?</h3>
+          <p class="texto">
+            Devido aos novos tipos de negócios, a Via Lácteos passou a operar como um grupo de várias empresas:
+          </p>
+
+          <!-- Vídeo -->
+          <div class="video-card" id="video-via">
+            <div class="video-thumb">
+              <video id="playerVideoVia" preload="metadata" playsinline poster="img/poster-via.jpg">
+                <source src="Video/Viagroup.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <button class="play-badge" type="button" aria-label="Reproduzir vídeo">
+                <span class="sr-only">Reproduzir vídeo</span>
+              </button>
+            </div>
+          </div>
+
+          <h3 class="topic-title">Nossas empresas</h3>
+
+          <!-- CARDS DAS EMPRESAS -->
+          <div class="empresas-container">
+            <div class="empresa-card">
+              <img src="img/cacau.png" alt="VIA Cacau" />
+              <div class="empresa-overlay"><span>Transporte de manteiga de cacau</span></div>
+            </div>
+
+            <div class="empresa-card">
+              <img src="img/florestal.png" alt="VIA Florestal" />
+              <div class="empresa-overlay"><span>Essa atividade envolve o transporte de madeira para unidades de produção.</span></div>
+            </div>
+
+            <div class="empresa-card">
+              <img src="img/lacteos.png" alt="VIA Lácteos" />
+              <div class="empresa-overlay"><span>Coleta de leite em propriedades e descarga em laticínio.</span></div>
+            </div>
+
+            <div class="empresa-card">
+              <img src="img/nutricao.png" alt="VIA Nutrição" />
+              <div class="empresa-overlay"><span>Entrega de ração suína e bovina em propriedades.</span></div>
+            </div>
+
+            <div class="empresa-card">
+              <img src="img/routenow.png" alt="Route Now" />
+              <div class="empresa-overlay"><span>Suporte para filiais que estão espalhadas pelo Brasil</span></div>
+            </div>
+
+            <div class="empresa-card">
+              <img src="img/seminovos.png" alt="VIA Seminovos" />
+              <div class="empresa-overlay"><span>Revenda de caminhões da frota usados para agregados</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="topic" id="pp-cco">
+          <br /><br />
+          <h3 class="topic-title">Qual a importância do Centro de Controle Operacional?</h3>
+          <p class="texto">
+            O CCO faz o acompanhamento das operações em tempo real, monitorando as saídas das rotas, o status das coletas
+            e as ocorrências (não coletas, atrasos, desvios, problemas). Ao identificar não conformidades, aciona a equipe
+            da filial e comunica o cliente. Assim, mantemos controle operacional, cumprimento de SLAs e a qualidade do
+            serviço da VIA para os clientes.
+          </p>
+
+          <figure class="inline-image">
+            <img src="img/fluxocco.png" alt="Fluxo ilustrativo comunicação CCO" class="zoomable" data-zoom />
+            <figcaption class="img-caption">Fluxo ilustrativo comunicação CCO</figcaption>
+          </figure>
+
+          <p class="texto">
+            O CCO realiza o monitoramento e cobrança, coleta as informações do motorista e filial, filtra os dados e encaminha para o cliente.
+          </p>
+        </article>
+
+        <!-- SOFT SKILLS -->
+        <article class="topic" id="pp-metodos">
+          <h3 class="topic-title">Técnicas úteis (Soft Skills)</h3>
+
+          <!-- Card 1: Feedback Burger -->
+          <div class="soft-card soft--burger">
+            <h3 class="topic-title">Feedback Burger</h3>
+            <p class="texto">
+              Feedback Burger, também conhecido como feedback sanduíche, é uma técnica de feedback que envolve apresentar a crítica construtiva entre dois elogios. A ideia é suavizar o impacto da crítica, tornando-a mais aceitável e incentivando a pessoa a receber o feedback de forma mais positiva e aberta à mudança.
+            </p>
+            <p class="texto">
+              Utilizado no CCO para realizar feedbacks entre a equipe; como trabalhamos com pessoas, é fundamental saber realizar um feedback com qualidade para não desgastar as relações.
+            </p>
+            <figure class="inline-image">
+              <img src="img/feedback burguer.png" alt="Esquema da técnica Feedback Burger" class="zoomable" data-zoom />
+              <figcaption class="img-caption">Exemplo visual do método Feedback Burger</figcaption>
+            </figure>
+            <div class="btn-wrap">
+              <a href="https://www.youtube.com/watch?v=kupvFcawOCA" class="btn-saiba" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Princípio 80/20 -->
+          <div class="soft-card soft--pareto">
+            <h3 class="topic-title">Princípio 80/20</h3>
+            <p class="texto">
+              O Princípio de Pareto, também conhecido como regra 80/20, afirma que, para muitos eventos, aproximadamente 80% dos efeitos vêm de 20% das causas. Essa regra pode ser aplicada em diversas áreas, desde negócios e finanças até a vida pessoal, indicando que um pequeno número de fatores geralmente é responsável pela maior parte dos resultados.
+            </p>
+            <p class="texto">A equipe do CCO utiliza essa técnica para focar nos maiores problemas, trazendo resultados mais rápidos e otimizados.</p>
+            <figure class="inline-image">
+              <img src="img/PrincipioPareto.png" alt="Fluxo ilustrativo do Príncipio de Pareto" class="zoomable" data-zoom />
+              <figcaption class="img-caption">Fluxo ilustrativo do Príncipio de Pareto</figcaption>
+            </figure>
+            <div class="btn-wrap">
+              <a href="https://www.youtube.com/watch?v=m32O0obtVWs" class="btn-saiba" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+            </div>
+          </div>
+
+          <!-- Card 3: 5 Porquês -->
+          <div class="soft-card soft--5w">
+            <h3 class="topic-title">5 Porquês</h3>
+            <p class="texto">
+              A técnica dos "5 Porquês" é uma ferramenta de análise de causa raiz, utilizada para identificar a origem de um problema ao perguntar "por quê?" repetidamente, geralmente cinco vezes. Ao questionar consecutivamente a causa de um problema, a técnica busca ir além dos sintomas superficiais e encontrar a sua causa fundamental.
+            </p>
+            <p class="texto">
+              Técnica mais utilizada durante o dia a dia do CCO. Ao receber as informações, precisamos agir com senso crítico, entender qual é a causa raiz do problema e resolvê-la.
+            </p>
+            <figure class="inline-image">
+              <img src="img/5porques.png" alt="Fluxo ilustrativo da técnica dos 5 Porquês" class="zoomable" data-zoom />
+              <figcaption class="img-caption">Fluxo ilustrativo dos 5 Porquês</figcaption>
+            </figure>
+            <div class="btn-wrap">
+              <a href="https://www.youtube.com/watch?v=yTlSLTXozp4" class="btn-saiba" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- TIPOS DE KM -->
+      <article class="topic" id="vg-tipos-km">
+        <h3 class="topic-title">Quais são os tipos de KM?</h3>
+
+        <div class="surface surface-tight km-surface">
+          <table class="fatores-table km-table" role="table">
+            <thead>
+              <tr>
+                <th scope="col">KM</th>
+                <th scope="col">Observação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>KM Rodado</td><td>Km maior entre telemetria e ponto a ponto.</td></tr>
+              <tr><td>KM Rodado adicionado</td><td>Km rodado justificado por meio de ocorrências.</td></tr>
+              <tr><td>KM Rodado total</td><td>Soma do rodado e rodado adicionado.</td></tr>
+              <tr><td>KM Previsto</td><td>Km previsto para a rota.</td></tr>
+              <tr><td>KM Previsto adicionado</td><td>Km previsto justificado por meio de ocorrências.</td></tr>
+              <tr><td>KM Previsto total</td><td>Soma do previsto e previsto adicionado.</td></tr>
+              <tr><td>KM Telemetria</td><td>Km obtido pelo rastreador do caminhão.</td></tr>
+              <tr><td>KM Ponto a ponto</td><td>Km traçando pontos do início ao fim da rota.</td></tr>
+              <tr><td>KM Diferença</td><td>Previsto total − Rodado total (valor absoluto conforme regra local).</td></tr>
+              <tr><td>KM Recebido</td><td>Km pago pelo cliente.</td></tr>
+              <tr><td>KM Justificado</td><td>Km adicionado/retirado via ocorrências.</td></tr>
+
+              <tr class="km-row-status">
+                <td>KM Status</td>
+                <td>
+                  <ul>
+                    <li><b>RODADO A MAIS:</b> rodado total ≥ 3% acima do previsto total</li>
+                    <li><b>RODADO A MENOS:</b> previsto total ≥ 3% acima do rodado total</li>
+                    <li><b>OK:</b> dentro da tolerância de ±3%</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr><td>KM Total</td><td>Km menor entre previsto total e rodado total.</td></tr>
+              <tr><td>KM Fechamento</td><td>Km menor entre (previsto total e rodado total) e Km recebido.</td></tr>
+              <tr><td>KM Morto</td><td>Km não pago pelo cliente.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- TIPOS DE ROTA -->
+      <article class="topic" id="vg-tipos-rota">
+        <h3 class="topic-title">Quais são os tipos de rota?</h3>
+
+        <div class="route-types">
+          <div class="route-type-card is-direta" aria-label="Rota direta">
+            <div class="rt-head">
+              <span class="rt-icon" aria-hidden="true">
+                <span class="rt-letter">D</span>
+              </span>
+              <div class="rt-title">
+                <h4>Rota direta</h4>
+                <span class="rt-badge">Ramal “D”</span>
+              </div>
+            </div>
+            <p>Não possui reboque; é mais simples, com escala igual à rota reboque, coletando menor volume.</p>
+          </div>
+
+          <div class="route-type-card is-reboque" aria-label="Rota reboque">
+            <div class="rt-head">
+              <span class="rt-icon" aria-hidden="true">
+                <span class="rt-letter">R</span>
+              </span>
+              <div class="rt-title">
+                <h4>Rota reboque</h4>
+                <span class="rt-badge">Ramal “R”</span>
+              </div>
+            </div>
+            <p>Opera com reboque, permitindo <strong>maior volume</strong>. O reboque fica estacionado; há
+              <strong>ENGATE</strong> e <strong>DESENGATE</strong>.
+            </p>
+          </div>
+
+          <div class="route-type-card is-socorro" aria-label="Rota socorro">
+            <div class="rt-head">
+              <span class="rt-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" role="img" focusable="false">
+                  <path d="M12 3 2 20h20L12 3Z" fill="currentColor" opacity=".9" />
+                  <rect x="11" y="9" width="2" height="6" fill="#fff" />
+                  <rect x="11" y="16.5" width="2" height="2" fill="#fff" />
+                </svg>
+              </span>
+              <div class="rt-title">
+                <h4>Rota socorro</h4>
+                <span class="rt-badge">Crítica</span>
+              </div>
+            </div>
+            <p>Criada para <strong>coletas críticas</strong> (atrasos, quebras etc.), evitando impactos na operação.</p>
+          </div>
+
+          <div class="route-type-card is-apoio" aria-label="Rota apoio">
+            <div class="rt-head">
+              <span class="rt-icon" aria-hidden="true">
+                <span class="rt-letter">A</span>
+              </span>
+              <div class="rt-title">
+                <h4>Rota apoio</h4>
+                <span class="rt-badge">Ramal “A”</span>
+              </div>
+            </div>
+            <p>É como a rota direta, mas que transborda em reboque de outra rota</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROCESSOS DA ROTA -->
+      <article class="topic" id="vg-rota">
+        <h3 class="topic-title">Quais processos são realizados durante uma rota?</h3>
+
+        <div class="processos-grid">
+          <section class="process-card process-card--saida">
+            <h4 class="process-title">Saída</h4>
+
+            <p class="texto">
+              Motorista separa os equipamentos necessários para a rota e realiza o checklist do caminhão
+              (verificando todas as partes afim de encontrar problemas).
+            </p>
+
+            <h5 class="process-subtitle">Maleta de equipamentos</h5>
+            <ul class="process-list">
+              <li><b>Concha:</b> Para realizar a coleta das amostras brancas.</li>
+              <li><b>Acidímetro de Neurex:</b> Também conhecido como pistola de alizarol, onde é realizado o teste do Alizarol.</li>
+              <li><b>Placa Petri:</b> Para despejar o leite após teste, verificar reação e fotogravar comprovante.</li>
+              <li><b>Escova de aço:</b> Para limpar a pistola de alizarol após o teste (assim garantindo que não haja interferência no teste por ter resquísios dos testes anteriores ou sujeira).</li>
+              <li><b>Termômetro:</b> Por mais que o tanque possua termômetro o motorista precisa realizar um check duplo da temperatura.</li>
+              <li><b>Celular:</b> Para utilização do aplicativo de coleta (necessário para evidenciar as coletas, volumes, alizarol, etc).</li>
+              <li><b>Impressora de ticket:</b> Para imprimir comprovante de coleta individual e deixar na propriedade, ao final da rota imprime ticket da rota completa.</li>
+            </ul>
+
+            <figure class="process-figure">
+              <img src="img/maleta.png" alt="Maleta de checklist da saída" class="process-img" data-zoom />
+              <figcaption class="video-caption">Maleta de equipamentos.</figcaption>
+            </figure>
+            <br>
+          </section>
+
+          <section class="process-card">
+            <h4>Engate/Desengate</h4>
+            <p class="texto">
+              Caso a rota possua reboque, o motorista estaciona em um ponto previsto pela roteirização e o desengata, realiza as coletas e faz o transbordo para o reboque estacionado. Após realizar todas as coletas, é feito o engate e o veículo segue para o lavador.
+            </p>
+
+            <figure class="video-card is-compact video--engate" id="video-engate" aria-label="Vídeo de Engate/Desengate">
+              <div class="video-thumb">
+                <video id="playerVideoEngate" preload="metadata" playsinline poster="img/engate.png">
+                  <source src="Video/engate.mp4" type="video/mp4" />
+                  Seu navegador não suporta o elemento <code>video</code>.
+                </video>
+                <button class="play-badge" type="button" aria-label="Reproduzir vídeo de engate/desengate">
+                  <span class="sr-only">Reproduzir vídeo</span>
+                </button>
+              </div>
+              <figcaption class="video-caption">Engate: processo de engate em reboque estacionado.</figcaption>
+            </figure>
+          </section>
+
+          <section class="process-card">
+            <h4>Transbordo</h4>
+            <p class="texto">
+              Em rotas com reboque, após o motorista realizar parte das coletas previstas pela roteirização ele retorna para o ponto de transbordo (onde o reboque está estacionado) e transborda o leite, assim fica com o caminhão vazio novamente e pode seguir para realizar mais coletas.
+            </p>
+
+            <figure class="video-card is-compact video--transbordo" id="video-transbordo" aria-label="Vídeo de Transbordo">
+              <div class="video-thumb">
+                <video id="playerVideoTransbordo" preload="metadata" playsinline poster="img/transbordo.png">
+                  <source src="Video/transbordo.mp4" type="video/mp4" />
+                  Seu navegador não suporta o elemento <code>video</code>.
+                </video>
+                <button class="play-badge" type="button" aria-label="Reproduzir vídeo de transbordo">
+                  <span class="sr-only">Reproduzir vídeo</span>
+                </button>
+              </div>
+              <figcaption class="video-caption">Transbordo: processo de transferência para o reboque estacionado.</figcaption>
+            </figure>
+          </section>
+
+          <section class="process-card">
+            <h4>Coleta</h4>
+            <p class="texto">
+              Ao chegar à propriedade, o motorista estaciona de modo que o mangote alcance o tanque, registra a temperatura indicada no resfriador e a do seu termômetro, e preenche as informações no aplicativo. Em seguida realiza o teste de alizarol; se estiver conforme, homogeneíza o leite (acionando a bomba do resfriador) e mede o volume com a régua, convertendo pela tabela do produtor. Coleta as amostras para o cliente, depois conecta o mangote, abre as válvulas e transfere o leite para os compartimentos selecionados do caminhão. Ao finalizar, fecha as válvulas, recolhe o mangote, imprime e entrega o vale de fornecimento ao produtor, registrando tudo no aplicativo.
+            </p>
+
+            <figure class="video-card is-compact video--coleta" id="video-coleta" aria-label="Vídeo de Coleta">
+              <div class="video-thumb">
+                <video id="playerVideoColeta" preload="metadata" playsinline poster="img/coleta.png">
+                  <source src="Video/processo coleta.mp4" type="video/mp4" />
+                  Seu navegador não suporta o elemento <code>video</code>.
+                </video>
+                <button class="play-badge" type="button" aria-label="Reproduzir vídeo de coleta">
+                  <span class="sr-only">Reproduzir vídeo</span>
+                </button>
+              </div>
+              <figcaption class="video-caption">Coleta: Processos de coleta.</figcaption>
+            </figure>
+
+            <br>
+            <h5 class="process-subtitle">Teste do alizarol</h5>
+            <br>
+            <ul class="process-list">
+              <li><b>Leite ácido:</b> Leite com PH abaixo do normal, ao realizar o teste o leite fica com grumos, não pode ser coletado.</li>
+              <li><b>Leite alcalino:</b> Leite com PH acima do normal... não pode ser coletado.</li>
+              <li><b>Leite normal:</b> Leite sem grumos e com coloração vermelho-tijolo, dentro do padrão para ser coletado.</li>
+            </ul>
+
+            <figure class="process-figure">
+              <img src="img/alizarol.png" alt="Tipos de reações do teste de alizarol" class="process-img" data-zoom />
+              <figcaption class="video-caption">Tipos de reações do teste de alizarol.</figcaption>
+            </figure>
+
+            <br><br>
+            <h5 class="process-subtitle">Coleta de qualidade</h5>
+            <br>
+            <ul class="process-list">
+              <li><b>ATB:</b> ... <strong>(Frasco com tampa branca).</strong></li>
+              <li><b>CCS:</b> ... <strong>(Frasco com tampa amarela ou vermelha).</strong></li>
+              <li><b>CBT:</b> ... <strong>(Frasco com tampa azul).</strong></li>
+            </ul>
+
+            <figure class="process-figure">
+              <img src="img/testesqualidade.png" alt="Tipos de recipientes para teste de qualidade" class="process-img" data-zoom />
+              <figcaption class="video-caption">Tipos de recipientes para teste de qualidade.</figcaption>
+            </figure>
+
+            <br>
+            <h5 class="process-subtitle">Amostra branca</h5>
+            <br>
+            <p class="texto">
+              Amostra coletada em toda a rota, serve para realizar a rastreabilidade do leite nos compartimentos. <strong>Exemplo:</strong> Caso algum compartimento do caminhão reprove...
+            </p>
+
+            <figure class="process-figure">
+              <img src="img/amostrabranca.png" alt="Recipiente padrão de amostra branca" class="process-img" data-zoom />
+              <figcaption class="video-caption">Recipiente padrão de amostra branca.</figcaption>
+            </figure>
+          </section>
+
+          <section class="process-card">
+            <h4>Lavador</h4>
+            <p class="texto">Após as coletas... não pode entrar sujo para descarregar na fábrica.</p>
+            <figure class="process-figure">
+              <img src="img/lavador.jpg" alt="Processo de lavagem externa" class="process-img" data-zoom />
+              <figcaption class="video-caption">Processo de lavagem externa do caminhão antes de entrar na fábrica.</figcaption>
+            </figure>
+          </section>
+
+          <section class="process-card">
+            <h4>Descarga</h4>
+            <p class="texto">Com o caminhão lavado... Após a descarga, é realizado o CIP no tanque.</p>
+
+            <figure class="process-figure">
+              <img src="img/descarga.png" alt="Caminhões realizando a descarga" class="process-img" data-zoom />
+              <figcaption class="video-caption">Caminhões estacionados realizando a descarga.</figcaption>
+            </figure>
+
+            <figure class="process-figure">
+              <img src="img/cip.png" alt="CIP do caminhão após descarga" class="process-img" data-zoom />
+              <figcaption class="video-caption">CIP: processo de lavagem interno do caminhão após descarga.</figcaption>
+            </figure>
+          </section>
+
+          <section class="process-card">
+            <h4>Regresso</h4>
+            <p class="texto">Com o caminhão liberado... Em algumas operações, o caminhão fica no pátio da própria fábrica.</p>
+          </section>
+        </div>
+      </article>
+
+      <article class="topic" id="vg-roteirizacao">
+        <h3 class="topic-title">O que é e para que serve uma roteirização?</h3>
+        <p class="texto">
+          A roteirização é o planejamento do trajeto... Em resumo, a roteirização torna a coleta mais eficiente, controlada e confiável.
+        </p>
+
+        <figure class="video-card is-compact video--roteirizacao" id="video-roteirizacao" aria-label="Vídeo de Roteirizacao">
+          <div class="video-thumb">
+            <video id="playerVideoRoteirizacao" preload="metadata" playsinline poster="img/roteirizacao.png">
+              <source src="Video/roteirizacao.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento <code>video</code>.
+            </video>
+            <button class="play-badge" type="button" aria-label="Reproduzir vídeo de roteirização">
+              <span class="sr-only">Reproduzir vídeo</span>
+            </button>
+          </div>
+          <figcaption class="video-caption">Vídeo sobre roteirização com os fundamentos de uma roteirização ideal.</figcaption>
+        </figure>
+      </article>
+
+      <article class="topic" id="vg-escala">
+        <h3 class="topic-title">Qual a finalidade da escala?</h3>
+        <p class="texto">
+          Geralmente feita em planilhas do Excel, facilita a gestão das rotas e reúne informações como <strong>ROTA, MOTORISTA, HORÁRIO DE INÍCIO, CAMINHÃO, etc.</strong> É utilizada diariamente no CCO e enviada com antecedência para os motoristas se programarem.
+        </p>
+        <figure class="process-figure">
+          <img src="img/escalaexemplo.png" alt="Exemplo de escala" class="process-img" data-zoom />
+        </figure>
+      </article>
+
+      <article class="topic" id="vg-pontualidade">
+        <h3 class="topic-title">Pontualidade e segurança nas rotas</h3>
+        <p class="texto">O horário de início da rota é programado... resultando em volume maior que o previsto e, consequentemente, não coletas.</p>
+        <p class="texto">Os motoristas são profissionais especializados... Se o caminhão não estiver em condições adequadas ou houver risco, a rota não é iniciada.</p>
+      </article>
+
+      <!-- ✅ ID corrigido: era vg-pontualidade duplicado -->
+      <article class="topic" id="vg-bpcom" aria-labelledby="bpcom-title">
+        <h3 class="topic-title" id="bpcom-title">Boas práticas de comunicação</h3>
+
+        <p class="bpcom-lead">
+          Uma boa comunicação evita erros, acelera soluções e fortalece o trabalho em equipe.
+          Veja orientações simples para melhorar o contato com motoristas e entre as equipes.
+        </p>
+
+        <ul class="bpcom-list" role="list">
+          <li class="bpcom-item">
+            <h4 class="bpcom-item-title">1) Cumprimente com cordialidade</h4>
+            <p>Comece com educação: demonstra respeito e abre espaço para um diálogo tranquilo.</p>
+            <div class="bpcom-exemplo" role="note" aria-label="Exemplo de abordagem">
+              <span class="bpcom-badge">Exemplo</span>
+              <p>“Bom dia, Sr. <em>Nome</em>! Tudo bem com o senhor?”</p>
+            </div>
+          </li>
+
+          <li class="bpcom-item">
+            <h4 class="bpcom-item-title">2) Verifique a saída da rota com cuidado</h4>
+            <p>Ao notar saída antes/depois do previsto, pergunte com calma o que aconteceu.</p>
+            <div class="bpcom-exemplo" role="note" aria-label="Exemplo de verificação">
+              <span class="bpcom-badge">Exemplo</span>
+              <p>“Estamos acompanhando as saídas. Houve algum imprevisto (atraso ou adiantamento)? Já foi resolvido?”</p>
+              <p class="bpcom-positivo">“Perfeito, desejamos uma ótima rota!”</p>
+            </div>
+          </li>
+
+          <li class="bpcom-item">
+            <h4 class="bpcom-item-title">3) Fale sobre manutenção com foco em segurança</h4>
+            <p>Alinhe a informação para agilizar o atendimento e garantir segurança operacional.</p>
+            <div class="bpcom-exemplo" role="note" aria-label="Exemplo de alinhamento de manutenção">
+              <span class="bpcom-badge">Exemplo</span>
+              <p>“Recebemos um informe sobre manutenção no seu caminhão. O senhor pode nos atualizar a situação?”</p>
+            </div>
+          </li>
+
+          <li class="bpcom-item">
+            <h4 class="bpcom-item-title">4) Atue em parceria com o CCO</h4>
+            <p>O CCO conecta Torre, Filial e Motorista para ajustar horários e otimizar processos.</p>
+            <div class="bpcom-exemplo" role="note" aria-label="Como o CCO pode ajudar">
+              <span class="bpcom-badge">Exemplo prático</span>
+              <p>“O motorista sugeriu saída às 04:30 para coleta bem-sucedida; o CCO contata a filial e ajusta o horário.”</p>
+            </div>
+          </li>
+        </ul>
+
+        <blockquote class="bpcom-quote">
+          “Não é só o que você fala, mas como você fala. Respeito, clareza e tom calmo fazem toda a diferença.”
+        </blockquote>
+      </article>
+
+      <article class="topic" id="vg-saidas">
+        <h3 class="topic-title">Saídas de rotas</h3>
+
+        <div class="surface surface-tight">
+          <h4 class="table-title">Fatores que impactam a saída no horário</h4>
+
+          <table class="fatores-table" role="table">
+            <thead>
+              <tr>
+                <th scope="col">Causa</th>
+                <th scope="col">Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Fábrica</td><td>Atraso por descarregamento ou problemas internos.</td></tr>
+              <tr><td>Logística</td><td>Falta de gestão da filial, rotas dobras, falha de comunicação etc.</td></tr>
+              <tr><td>Mão de obra</td><td>Atraso do motorista.</td></tr>
+              <tr><td>Manutenção</td><td>Manutenção necessária antes da saída.</td></tr>
+              <tr><td>Divergência de Roteirização</td><td>Janela de coleta inadequada ao horário previsto.</td></tr>
+              <tr><td>Solicitado pelo cliente</td><td>Execução em horário diferente (socorros/apoios).</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="topic" id="vg-nao-coletas">
+        <h3 class="topic-title">Não coletas</h3>
+
+        <div class="surface surface-tight">
+          <h4 class="table-title">Fatores que causam uma não coleta</h4>
+
+          <table class="fatores-table" role="table">
+            <thead>
+              <tr>
+                <th scope="col">Causa</th>
+                <th scope="col">Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>A rota não foi realizada</td><td>Atraso inviabilizou a coleta.</td></tr>
+              <tr><td>Alizarol Positivo</td><td>Amostra enviada ao laboratório.</td></tr>
+              <tr><td>Coletado por outra transportadora</td><td>Outra empresa realizou a coleta.</td></tr>
+              <tr><td>Descumprimento de roteirização</td><td>Não coletou conforme previsto.</td></tr>
+              <tr><td>Eqp. Cheio/Aumento de Vol.</td><td>Ordenha extra/aumento sem aviso.</td></tr>
+              <tr><td>Eqp. Cheio/Coleta Extra</td><td>Apoio em produtor crítico.</td></tr>
+              <tr><td>Eqp. Cheio/Eqp Menor</td><td>Equipamento menor que o roteirizado.</td></tr>
+              <tr><td>Eqp. Cheio/Rota Atrasada</td><td>Ordenha a mais por atraso.</td></tr>
+              <tr><td>Falta de acesso</td><td>Estrada/porteira/bloqueio.</td></tr>
+              <tr><td>Leite com antibiótico</td><td>Detecção e coleta de amostra.</td></tr>
+              <tr><td>Leite congelado</td><td>Impossibilita bombeamento.</td></tr>
+              <tr><td>Leite descartado</td><td>Irregularidades.</td></tr>
+              <tr><td>Leite quente</td><td>Atrasos/falta de luz/problemas no tanque.</td></tr>
+              <tr><td>Sem tabela/leitura</td><td>Tabela rasurada/ausente.</td></tr>
+              <tr><td>Não coletado – SDL</td><td>Solicitação do supervisor.</td></tr>
+              <tr><td>Produtor suspenso</td><td>Ex.: alizarol positivo.</td></tr>
+              <tr><td>Objeto/sujeira</td><td>Contaminação.</td></tr>
+              <tr><td>Parou de fornecer</td><td>Exclusão da rota.</td></tr>
+              <tr><td>Volume insuficiente</td><td>Abaixo do mínimo.</td></tr>
+              <tr><td>Problemas mecânicos</td><td>Quebra de equipamento/bomba.</td></tr>
+              <tr><td>Produtor solicitou</td><td>Pedido do produtor.</td></tr>
+              <tr><td>Resfriador vazio</td><td>Sem volume.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- NORMALIZAÇÃO DAS JUSTIFICATIVAS -->
+      <section id="norm-justificativas" class="section">
+        <h2 class="section-title">Normalização das justificativas</h2>
+
+        <article class="topic">
+          <h3 class="topic-title">Por que padronizar?</h3>
+          <p class="texto">
+            Cada atraso/adiantamento tem uma causa específica. Padronizar <strong>como</strong> descrevemos os motivos
+            evita dúvida do cliente, facilita auditoria e mantém a comunicação objetiva.
+          </p>
+        </article>
+
+        <article class="topic">
+          <h3 class="topic-title">Quando detalhar e quando resumir</h3>
+
+          <div class="surface surface-tight">
+            <h4 class="table-title">Guia rápido</h4>
+            <table class="fatores-table" role="table">
+              <thead>
+                <tr>
+                  <th scope="col">Situação</th>
+                  <th scope="col">Como justificar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Manutenção que impacta segurança/operação</td>
+                  <td><strong>Detalhar</strong> qual item e ação realizada.</td>
+                </tr>
+                <tr>
+                  <td>Ocorrências internas do cliente (ex.: janela alterada)</td>
+                  <td><strong>Detalhar</strong> o ajuste combinado.</td>
+                </tr>
+                <tr>
+                  <td>Motivos pessoais/saúde do motorista</td>
+                  <td><strong>Resumir</strong> (sem dados sensíveis). Ex.: “Motivos pessoais”.</td>
+                </tr>
+                <tr>
+                  <td>Fatores climáticos/viários genéricos</td>
+                  <td><strong>Resumir</strong> de forma clara. Ex.: “Chuva intensa/estrada bloqueada”.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bpcom-exemplo" role="note" aria-label="Exemplo de detalhamento de manutenção">
+            <span class="bpcom-badge">Exemplo (detalhar)</span>
+            <p>
+              <strong>Manutenção:</strong> substituição do <em>sensor de pressão do sistema de freio</em> às 04:10h; liberação do veículo às 04:35h.
+            </p>
+          </div>
+
+          <div class="bpcom-exemplo" role="note" aria-label="Exemplo de resumo sem exposição de dados sensíveis">
+            <span class="bpcom-badge">Exemplo (resumir)</span>
+            <p>
+              Texto original: “O motorista saiu atrasado de casa devido a estar gripado e o tempo estar muito frio...”
+              <br><span class="bpcom-positivo"><strong>Padronizado:</strong> Atraso por motivos de saúde.</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="topic">
+          <h3 class="topic-title">Modelos prontos (copiar e colar)</h3>
+          <ul class="dot-list">
+            <li><strong>Manutenção preventiva/corretiva:</strong> “Atraso por manutenção – <em>troca de correia do alternador</em> realizada às 03:50; veículo liberado às 04:15.”</li>
+            <li><strong>Ajuste de janela do cliente:</strong> “Saída ajustada a pedido do cliente para atender nova janela de coleta (XX:XX).”</li>
+            <li><strong>Tráfego/condições de via:</strong> “Atraso por retenção viária/chuva intensa no trecho (km XX–YY).”</li>
+            <li><strong>Operação com reboque:</strong> “Atraso por engate/transbordo adicional previsto em rota R.”</li>
+            <li><strong>Pessoal/saúde:</strong> “Atraso por motivos pessoais.” ou “Atraso por motivos de saúde.”</li>
+          </ul>
+        </article>
+
+        <article class="topic">
+          <h3 class="topic-title">Boas práticas de redação</h3>
+          <ul class="dot-list">
+            <li>Seja <strong>objetivo</strong> e use linguagem neutra (sem juízo de valor).</li>
+            <li>Evite dados pessoais/sensíveis; priorize a <strong>causa operacional</strong>.</li>
+            <li>Registre <strong>horas aproximadas</strong> quando houver intervenção técnica (ex.: “03:40–04:05”).</li>
+            <li>Mantenha coerência com a <strong>escala</strong> e com as <strong>ocorrências</strong> do sistema.</li>
+          </ul>
+        </article>
+      </section>
+
+      <article class="topic" id="vg-madrugada">
+        <h3 class="topic-title">Turno noturno</h3>
+        <h4 class="objetivos-title">Objetivos</h4>
+        <ul class="dot-list objetivos-list">
+          <li>Acompanhar saídas em tempo real e divergências.</li>
+          <li>Acompanhamento de horários, presença e pendências.</li>
+          <li>Replanejar impactos para o dia corrente.</li>
+          <li>Enviar status das saídas pela manhã.</li>
+          <li>Realizar a alimentação do sistema</li>
+        </ul>
+      </article>
+
+      <article class="topic" id="vg-diurno">
+        <h3 class="topic-title">Turno diurno</h3>
+        <h4 class="objetivos-title">Objetivos</h4>
+        <ul class="dot-list objetivos-list">
+          <li>Tratar não coletas e acompanhar rotas.</li>
+          <li>Monitorar, analisar causa e agir.</li>
+          <li>Comunicação assertiva e ágil.</li>
+          <li>Enviar status à tarde/noite.</li>
+          <li>Realizar a alimentação do sistema</li>
+        </ul>
+      </article>
+
+
+
+      <!-- ROUTE NOW — VÍDEOS (EMBUTIDOS NO SITE) -->
+<section id="route-now-videos" class="section">
+  <h2 class="section-title">Route Now — Vídeos</h2>
+
+  <p class="rn-lead">
+    Assista os vídeos diretamente aqui no portal (sem abrir o YouTube).
+  </p>
+
+  <div class="yt-grid">
+    <article class="yt-card">
+      <h3 class="yt-title">1º - Apresentação Route Now</h3>
+      <div class="yt-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/NLrT47pVoL0?rel=0&modestbranding=1"
+          title="Apresentação Route Now"
+          frameborder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </article>
+
+    <article class="yt-card">
+      <h3 class="yt-title">2º - Ferramentas do sistema</h3>
+      <div class="yt-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/qOhkltHjJU8?rel=0&modestbranding=1"
+          title="Ferramentas do sistema"
+          frameborder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </article>
+
+    <article class="yt-card">
+      <h3 class="yt-title">3º - Tipos de KM’s e ocorrências</h3>
+      <div class="yt-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/nwGlHSkvNU8?rel=0&modestbranding=1"
+          title="Tipos de KM’s e ocorrências"
+          frameborder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </article>
+
+    <article class="yt-card">
+      <h3 class="yt-title">4º - Encerramento de rotas</h3>
+      <div class="yt-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/3fL2BI0auJk?rel=0&modestbranding=1"
+          title="Encerramento de rotas"
+          frameborder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </article>
+
+    <article class="yt-card">
+      <h3 class="yt-title">5º - Como realizar uma auditoria</h3>
+      <div class="yt-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/_vFSsmLsFY0?rel=0&modestbranding=1"
+          title="Como realizar uma auditoria"
+          frameborder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </article>
+  </div>
+</section>
+
+      <div class="btn-wrap">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyYLpWAnGfc98zyyKniXzJxA6r6h2KGkT4ae5v8dhnsf3oXw/viewform?usp=dialog"
+          class="btn-saiba" target="_blank" rel="noopener noreferrer">
+          Realizar teste
+        </a>
+      </div>
+
+      <footer class="footer">
+        © <span id="year"></span> VIA Group — Portal de Treinamento
+      </footer>
+    </main>
+  </div>
+
+  <!-- MODAL DE ZOOM DE IMAGEM -->
+  <div class="zoom-modal" id="zoomModal" aria-hidden="true" role="dialog" aria-label="Visualização da imagem">
+    <button class="zoom-close" type="button" aria-label="Fechar visualização">&times;</button>
+    <img src="" alt="" id="zoomImage" />
+  </div>
+
+  <script>
+    (function () {
+      function ready(fn) {
+        if (document.readyState !== 'loading') fn();
+        else document.addEventListener('DOMContentLoaded', fn);
+      }
+
+      ready(function () {
+        // Ano no rodapé
+        var yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // Scrollspy do menu
+        var sections = Array.prototype.slice.call(document.querySelectorAll('main .section, .topic'));
+        var links = Array.prototype.slice.call(document.querySelectorAll('.side-link'));
+
+        function findLinkById(id) {
+          if (!id) return null;
+          var safe = String(id).replace(/([\\\]\\])/g, '\\$1');
+          return document.querySelector('.side-link[href="#' + safe + '"]');
+        }
+        function setActive(id) {
+          var link = findLinkById(id);
+          if (!link) return;
+          links.forEach(function (l) { l.classList.remove('active'); });
+          link.classList.add('active');
+        }
+
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (!e.isIntersecting) return;
+              setActive(e.target.id);
+            });
+          }, { rootMargin: '-45% 0px -50% 0px', threshold: [0, 0.2, 0.6, 1] });
+          sections.forEach(function (s) { if (s.id) io.observe(s); });
+        } else {
+          function onScroll() {
+            var scrollY = window.scrollY || window.pageYOffset;
+            var current = null;
+            for (var i = 0; i < sections.length; i++) {
+              var s = sections[i];
+              if (!s.id) continue;
+              var top = s.getBoundingClientRect().top + scrollY - (window.innerHeight * 0.45);
+              if (scrollY >= top) current = s;
+            }
+            if (current) setActive(current.id);
+          }
+          window.addEventListener('scroll', onScroll, { passive: true });
+          onScroll();
+        }
+
+        // Player inline — liga todos os cards .video-card da página
+        (function initVideoCards() {
+          document.querySelectorAll('.video-card').forEach(function (card) {
+            var thumb = card.querySelector('.video-thumb');
+            var video = card.querySelector('video');
+            var play = card.querySelector('.play-badge');
+            if (!thumb || !video || !play) return;
+
+            function startPlayback() {
+              thumb.classList.add('is-playing');
+              video.setAttribute('controls', '');
+              var p = video.play();
+              if (p && typeof p.then === 'function') p.catch(function () { });
+            }
+
+            play.addEventListener('click', function (e) { e.stopPropagation(); startPlayback(); });
+            play.addEventListener('keydown', function (e) {
+              if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); startPlayback(); }
+            });
+
+            video.addEventListener('click', function () {
+              if (video.paused) video.play(); else video.pause();
+            });
+          });
+        })();
+
+        // ZOOM de imagens
+        (function () {
+          var modal = document.getElementById('zoomModal');
+          var modalImg = document.getElementById('zoomImage');
+          if (!modal || !modalImg) return;
+
+          var closeBtn = modal.querySelector('.zoom-close');
+
+          function openModal(src, alt) {
+            if (!src) return;
+            modalImg.src = src;
+            modalImg.alt = alt || '';
+            modal.setAttribute('aria-hidden', 'false');
+            modal.classList.add('open');
+            var scrollBarComp = window.innerWidth - document.documentElement.clientWidth;
+            document.body.style.overflow = 'hidden';
+            if (scrollBarComp > 0) document.body.style.paddingRight = scrollBarComp + 'px';
+          }
+          function closeModal() {
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            document.body.style.paddingRight = '';
+            setTimeout(function () { modalImg.src = ''; modalImg.alt = ''; }, 150);
+          }
+
+          document.addEventListener('click', function (e) {
+            var img = e.target && e.target.closest ? e.target.closest('img[data-zoom]') : null;
+            if (img) {
+              e.preventDefault();
+              openModal(img.getAttribute('src'), img.getAttribute('alt'));
+              return;
+            }
+            if (e.target === modal) closeModal();
+          });
+
+          if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+          });
+        })();
+      });
+    })();
+  </script>
+</body>
+
+</html>
